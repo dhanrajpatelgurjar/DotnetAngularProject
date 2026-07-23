@@ -1,0 +1,17 @@
+<div class="card">
+        <form [formGroup]="updatestd" (ngSubmit)="update()"> 
+            <div class="mb-3">
+              <label for="form-control" class="form-label">Name</label>
+            <input type="Name" class="form-control" formControlName="name">
+            </div>
+            <div class="mb-3">
+              <label for="date" class="form-label">Date</label>
+              <input type="datetime" class="form-control" id="date" formControlName="date">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="complete" [checked]=studentData.complete formControlName="complete">
+              <label class="form-check-label" for="complete">Complete !</label>
+            </div>
+            <button type="submit" class="form-control btn btn-primary" >Create</button>
+          </form>
+</div>
